@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Custom NewTab",
+  "version": "1.0",
+  "description": "Basic test extension",
+  "permissions": [
+    "tabs"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "A test popup will show up"
+  },
+  "chrome_url_overrides": {
+    "newtab": "public/newtab.html"
+  }
+}

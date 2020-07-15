@@ -1,0 +1,13 @@
+Items to include:
+
+Github notifications
+Weather
+Time
+Smart assistant
+TO_DO intergration
+canvas / svg thing (fuck's it called?)
+motivational quotes
+personal reminders/goals integration (figure out!)
+search bar
+api to images
+api to qoutese
