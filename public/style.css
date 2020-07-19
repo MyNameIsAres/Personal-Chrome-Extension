@@ -1,3 +1,28 @@
-background {
-    color: aqua;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family:  'Montserrat';
+  }
+
+#container {
+        background-image: url('../images/test1.jpg');
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    height:100vh;
+}
+
+#currentTime {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: white;
 }
