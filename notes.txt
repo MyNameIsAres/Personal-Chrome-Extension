@@ -1,6 +1,5 @@
 Items to include:
 
-Github notifications
 Weather
 Time
 Smart assistant
@@ -9,8 +8,12 @@ canvas / svg thing (fuck's it called?)
 motivational quotes
 personal reminders/goals integration (figure out!)
 search bar
-api to images
-api to qoutese
+api to imagesxxx
+api to qoutesexxx
 pretty overlay thingy
 
 
+Possibly refactor newtabjs and timejs to be class objects
+
+
+Github notifications
