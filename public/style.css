@@ -46,3 +46,12 @@ body {
     /* color: white; */
 
 }
+
+#weather {
+    font-size: 25px;
+    display: flex;
+    text-align: right;
+    width: 100%;
+    height: 5%;
+    
+}

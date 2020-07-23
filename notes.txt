@@ -3,17 +3,27 @@ Items to include:
 Weather
 Time
 Smart assistant
-TO_DO intergration
+TO_DO intergration (assisant?/reminders?)
 canvas / svg thing (fuck's it called?)
-motivational quotes
+quotes (handy dandy)
 personal reminders/goals integration (figure out!)
-search bar
+search bar (meh?)
 api to imagesxxx
 api to qoutesexxx
 pretty overlay thingy
+dd3
 
 
-Possibly refactor newtabjs and timejs to be class objects
+Github notifications (seperate)
+20 minute reminders (seperate)
 
 
-Github notifications
+Press on the settings button and a small div opens
+Create options inside for sliders
+Implement sliders
+Implement Weather
+Implement randomizer
+Collect quotes, add manual quotes
+Add manual images
+
+Figure out how to show icons based on 

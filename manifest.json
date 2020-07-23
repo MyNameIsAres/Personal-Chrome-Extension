@@ -4,7 +4,8 @@
   "version": "1.0",
   "description": "Basic test extension",
   "permissions": [
-    "tabs"
+    "tabs",
+    "geolocation"
   ],
   "browser_action": {
     "default_popup": "popup.html",
@@ -13,4 +14,5 @@
   "chrome_url_overrides": {
     "newtab": "public/newtab.html"
   }
+  
 }
