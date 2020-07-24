@@ -26,4 +26,3 @@ Implement randomizer
 Collect quotes, add manual quotes
 Add manual images
 
-Figure out how to show icons based on 
