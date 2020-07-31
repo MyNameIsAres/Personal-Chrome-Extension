@@ -11,3 +11,6 @@ personal reminders/goals integration (figure out!)
 search bar
 api to images
 api to qoutese
+update images every so often
+update weather every so often
+update quotes every so often
