@@ -1,37 +1,45 @@
-// import key from "/private.js";
+/*
+    newtab.js is responsible for general activities such as displaying
+    "good morning/afternoon/evening" depending on the time
 
-const key = "BMJwXow-9pmAjpJ7ha72VBVCT_34oitGkoClSBBt9gk"
+    more specific functionalities shoudl be delicated to the appropriate
+    files.
 
-function updateTimer() {
-    let date = new Date();
+*/
 
-    let currentTime = date.getHours() + " : " +date.getMinutes();
-    console.log(currentTime);
+function greeting() {
+  const greeting = document.getElementById("welcomeMessage");
+  const time = new Date().getHours();
+  const name = "Ares";
 
+  greeting.innerHTML = `${
+    hour >= 18
+      ? `Good evening`
+      : hour < 18 && hour >= 12
+      ? `Good afternoon`
+      : hour < 12
+      ? `Good Morning`
+      : ""
+  }, `;
+
+  greeting.prepend(name);
 }
 
-// setTimeout(updateTimer(), 3000);
+document.getElementById("form", addEventListener("submit", search));
 
-let timeDisplay = document.getElementById('time-display');
-// timeDisplay.appendChild(timeDisplay)
+function search(e) {
+  e.preventDefault();
+  let text = document.getElementById("text").value;
+  let x = (window.location =
+    "https://www.ecosia.org/search?q=" + encodeURIComponent(text));
+  console.log(x);
+}
 
-// console.log(date.getHours() + date.getMinutes());
+// Rename eventually
+// function reminderToStepAway() {
+//     console.log("Take a 20 second break!");
 
-let container  = document.getElementById('container');
+//     setInterval(reminderToStepAway, 5000);
+// }
 
-
-fetch('https://api.unsplash.com/photos/random?query=nature&client_id=' + key )
-.then(data => data.json())
-.then((data) => {
-    console.log(data.urls.full);
-
-    container.style.background = 'https://images.unsplash.com/photo-1568323993151-e465adfa30f6?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0OTI0MH0';
-
-console.log(container);
-console.log(container.style.background);
-
-})
-.catch((error) => {
-    console.log(error + " This is an error!")
-});
-
+//

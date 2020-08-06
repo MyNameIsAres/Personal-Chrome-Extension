@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    
-    <div id="container">
-        <div id="time-display">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="  https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
 
-        </div>
+  <body>
+    <!-- TODO: move to center, drop down to choose search engine   -->
+    <form id="form">
+      <input type="text" name="" id="text" />
+    </form>
 
-        <h1>Hello World!</h1>
-<p>This is my new tabdd page!</p>
+    <!-- TODO: Figure out icon, choose solution #1 or solution #2 -->
+    <i class="wi wi-night-sleet"></i>
+
+    <div id="weather">
+      <!-- ! Weather data loaded from weather.js -->
     </div>
 
+    <div id="centerContainer">
+      <div id="currentTime"></div>
+      <h1 id="welcomeMessage">Welcome back, Ares</h1>
+    </div>
 
-<script src="newtab.js"></script>
+    <div id="settings">
+      <i class="fas fa-cog" id="settings-wheel"></i>
+    </div>
 
-<!-- <script src="newtab.js"></script> -->
-</body>
+    <script src="newtab.js"></script>
+    <script src="time.js"></script>
+    <script src="weather.js"></script>
+    <script src="settings.js"></script>
+  </body>
 </html>
