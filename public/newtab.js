@@ -7,21 +7,38 @@
 
 */
 
+// Could be prettier
+function fetchdDayPartingImages() {
+    const time = new Date().getHours();
+    const body = document.getElementsByTagName('body')[0];
+    console.log(body);
+    //  background-image: url('../images/test1.jpg');
+
+
+    body.style.backgroundImage = `${(time >= 18) ? "url(../images/nightsky.jpg)" 
+    : (time < 18 && time >= 12 ) ? "url(../images/test1.jpg)" : ''}`;
+
+    console.log("beeh");
+    
+}
+
 
 function greeting() {
     const greeting = document.getElementById('welcomeMessage');
     const time = new Date().getHours();
     const name = "Ares";
 
-    greeting.innerHTML = `${(hour >= 18) ? `Good evening` :
-        (hour < 18 && hour >= 12) ? `Good afternoon` :
-            (hour < 12) ? `Good Morning` : ''}, `;
+    greeting.innerHTML = `${(time >= 18) ? `Good evening` :
+        (time < 18 && time >= 12) ? `Good afternoon` :
+            (time < 12) ? `Good Morning` : ''}, `;
 
-    greeting.prepend(name);
+    greeting.append(name);
 
+    console.log(12344)
 
 
 }
+
 
 document.getElementById('form', addEventListener('submit', search));
 
@@ -32,12 +49,5 @@ function search(e) {
     console.log(x);
 }
 
-// Rename eventually
-// function reminderToStepAway() {
-//     console.log("Take a 20 second break!");
-
-//     setInterval(reminderToStepAway, 5000);
-// }
-
-// 
-
+greeting();
+fetchdDayPartingImages();

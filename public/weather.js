@@ -9,8 +9,10 @@ const weather = document.getElementById('weather');
 // Obviously hidden, duh..
 const api = '';
 
+// This aint working
 function convertKelvinToCelcius(kelvinTemp) {
-    return Math.floor(kelvinTemp - 273.15);
+    console.log(kelvinTemp);
+    return (kelvinTemp - 32) * 5/9;
 }
 
 
@@ -39,18 +41,19 @@ function getWeatherData(latitude, longitude) {
     fetch(url)
         .then(data => data.json())
         .then((data) => {
-            console.log(data);
+            console.log(data.main.temp);
             let celcius = convertKelvinToCelcius(data.main.temp);
             let testIcon = data.weather.icon;
+            console.log(celcius + " I am celcius");
             document.getElementById("weather").innerHTML = icon;
-            console.log(celcius);
+           
           
         })
                 .catch((error) => console.log(error));
 }
 
 
-// Will fix tomorrow
+// Will fix tomorrow < -- have still not fixed. Forgot what this did.
 // getPosition()
 //     .then((position) => {
 //         const {latitude, longitude} = position.coords

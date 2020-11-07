@@ -6,31 +6,48 @@
 
 body {
     height: 100vh;
-    font-family:  'Montserrat';
-    background-image: url('../images/test1.jpg');
-    background-size:cover;
+    font-family: 'Montserrat';
+    /* background-image: url('../images/test1.jpg'); */
+    background-size: cover;
     background-position: center;
-    margin: 0;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0
+}
+
 
 #weather {
+    font-size: 25px;
+    display: flex;
+    right: 30px;
+    align-items: flex-end;
+    flex-direction: column;
     width: 100%;
-    height: 3vh;
-}
-
-#centerContainer {
-    width: 100%;
-    height: 20vh;
-    text-align: center;
-    margin: auto;
-    height: 28rem;
+    height: 5%;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);  
+    top: 30px;
+    color: white;
+    font-size: 20px;
 }
 
-#centerContainer #currentTime, #welcomeMessage {
+#main {
+    width: 100%;
+
+    text-align: center;
+    /* margin: -200px 0 50px; */
+    /* height: 28rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#main #currentTime,
+#welcomeMessage {
     color: white;
 
 }
@@ -47,11 +64,50 @@ body {
 
 }
 
-#weather {
-    font-size: 25px;
+
+
+#search-div {
     display: flex;
-    text-align: right;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 12px 20px;
+
+}
+
+.social-container {
+    margin: 20px 0;
+}
+
+.social-container a {
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+
+    height: 70px;
+    width: 70px;
+    color: lightgray;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.social-container a:hover {
+    transform: scale(0.95)
+}
+
+#text {
     width: 100%;
-    height: 5%;
-    
+    margin: 10px 0;
+    padding: 12px 20px;
+    border-radius: 20px;
+    /* font-size: 1rem; */
+    font-size: 18px;
+    border: 1px solid lightgray;
+}
+
+#text:focus {
+    outline: none;
 }
