@@ -11,12 +11,8 @@ const api = "";
 
 // This aint working
 function convertKelvinToCelcius(kelvinTemp) {
-<<<<<<< HEAD
     console.log(kelvinTemp);
     return (kelvinTemp - 32) * 5/9;
-=======
-  return Math.floor(kelvinTemp - 273.15);
->>>>>>> 317687cd35da6328ecd7dd249974b6a43a07a184
 }
 
 let getPosition = function () {
@@ -40,7 +36,6 @@ function getIcon(input) {
 }
 
 function getWeatherData(latitude, longitude) {
-<<<<<<< HEAD
     console.log(latitude);
     const url =`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${api}`;
     fetch(url)
@@ -68,18 +63,3 @@ function getWeatherData(latitude, longitude) {
 //     .catch((error) => {
 //         console.log("Error has occured " + error);
 //     });
-=======
-  console.log(latitude);
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${api}`;
-  fetch(url)
-    .then((data) => data.json())
-    .then((data) => {
-      console.log(data);
-      let celcius = convertKelvinToCelcius(data.main.temp);
-      let testIcon = data.weather.icon;
-      document.getElementById("weather").innerHTML = celcius;
-      console.log(celcius);
-    })
-    .catch((error) => console.log(error));
-}
->>>>>>> 317687cd35da6328ecd7dd249974b6a43a07a184
