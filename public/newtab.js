@@ -43,11 +43,12 @@ function greeting() {
 document.getElementById('form', addEventListener('submit', search));
 
 function search(e) {
-    e.preventDefault();
-    let text = document.getElementById('text').value;
-    let x =   window.location = "https://www.ecosia.org/search?q=" + encodeURIComponent(text);
-    console.log(x);
+  e.preventDefault();
+  let text = document.getElementById("text").value;
+  let x = (window.location =
+    "https://www.ecosia.org/search?q=" + encodeURIComponent(text));
+  console.log(x);
 }
 
-greeting();
 fetchdDayPartingImages();
+greeting();
