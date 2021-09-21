@@ -1,8 +1,3 @@
-/*
-
-    File designated for everything weather related.
-
-*/
 
 const weather = document.getElementById("weather");
 
