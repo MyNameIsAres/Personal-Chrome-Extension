@@ -1,9 +1,7 @@
-
 function setBackgroundImage() {
     const body = document.getElementsByTagName('body')[0];
-    body.style.backgroundImage = url('../images/nightky.jpg.jpg');
+    body.style.backgroundImage = `url('../images/nightsky.jpg')`;
 }
-
 
 function greeting() {
     const greeting = document.getElementById('welcomeMessage');
@@ -20,9 +18,7 @@ function greeting() {
 function search(e) {
   e.preventDefault();
   let text = document.getElementById("text").value;
-  let x = (window.location =
-    "https://www.ecosia.org/search?q=" + encodeURIComponent(text));
-  console.log(x);
+  window.location = "https://www.ecosia.org/search?q=" + encodeURIComponent(text);
 }
 
 document.getElementById('form', addEventListener('submit', search));

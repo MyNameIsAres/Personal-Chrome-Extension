@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Custom NewTab",
+  "name": "Custom NewTab V2",
   "version": "1.0",
   "description": "Basic test extension",
   "permissions": [
